@@ -36,11 +36,11 @@ public class ServiceUrl {
 
         RecordUrlEncurtada record = objectMapper.readValue(json, RecordUrlEncurtada.class);
 
-        EntityUrl entityUrl = new EntityUrl(url.getUrl(),record.urlEncurtada());
+        EntityUrl entityUrl = new EntityUrl(url.getUrl(),record.result_url());
 
         repositoryUrl.save(entityUrl);
 
-        return new ResponseUrl(true,record.urlEncurtada());
+        return new ResponseUrl(true,record.result_url());
     }
 
     public ResponseUrl removeUrlEncurtada(RequestUrl url) {

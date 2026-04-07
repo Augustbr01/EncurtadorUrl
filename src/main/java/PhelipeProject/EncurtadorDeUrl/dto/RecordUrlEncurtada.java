@@ -3,6 +3,6 @@ package PhelipeProject.EncurtadorDeUrl.dto;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record RecordUrlEncurtada(String urlEncurtada) {
+public record RecordUrlEncurtada(String result_url) {
 
 }

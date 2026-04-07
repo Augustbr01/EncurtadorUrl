@@ -30,7 +30,7 @@ public class ObterUrlEncurtada {
         HttpClient httpClient = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://api.encurtador.dev/encurtamentos"))
+                .uri(URI.create("https://cleanuri.com/api/v1/shorten"))
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();

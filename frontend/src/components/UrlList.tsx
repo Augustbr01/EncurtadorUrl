@@ -85,7 +85,7 @@ export default function UrlList({ urls, loading, error, onRefresh }: Props) {
                   </td>
                   <td className="py-3 px-2">
                     <a
-                      href={`https://${entry.urlEncurtada}`}
+                      href={entry.urlEncurtada}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline font-mono"
